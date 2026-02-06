@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netlify Super Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h2>Super Chat 💬</h2>
+        </header>
+        
+        <div id="message-board" class="messages">
+            <div class="loading">Loading messages...</div>
+        </div>
+
+        <form id="chat-form">
+            <input type="text" id="username" placeholder="Name" required maxlength="10">
+            <input type="text" id="message-input" placeholder="Type a message..." required autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
